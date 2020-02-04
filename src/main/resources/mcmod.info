@@ -1,0 +1,16 @@
+[
+{
+  "modid": "plm",
+  "name": "Povizun's Learning Mod",
+  "description": "Sas",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Povizun"],
+  "credits": "Suppergerrie2's tutorial and the internet!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
