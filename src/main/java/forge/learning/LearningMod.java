@@ -28,5 +28,4 @@ public class LearningMod {
 	}
 	@Instance
 	public static LearningMod instance;
-
 }
