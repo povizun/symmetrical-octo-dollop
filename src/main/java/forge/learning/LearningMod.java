@@ -2,6 +2,7 @@ package forge.learning;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -23,5 +24,7 @@ public class LearningMod {
 	public void postInit(FMLPostInitializationEvent event) {
 		System.out.println(Reference.MODID + ":postInit");
 	}
-
+	@Instance
+	public static LearningMod instance;
+	
 }
