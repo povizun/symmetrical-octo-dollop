@@ -1,5 +1,6 @@
 package forge.learning;
 
+import forge.learning.init.ModBlocks;
 import forge.learning.init.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -15,6 +16,7 @@ public class LearningMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println(Reference.MODID + ":preInit");
 		ModItems.init();
+		ModBlocks.init();
 	}
 	
 	@EventHandler

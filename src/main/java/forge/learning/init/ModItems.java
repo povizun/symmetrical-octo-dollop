@@ -3,6 +3,7 @@ package forge.learning.init;
 import forge.learning.Reference;
 import forge.learning.items.ItemBasic;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -14,7 +15,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ModItems {
 	static Item firstItem;
 	public static void init() {
-		firstItem = new ItemBasic("first_item");
+		firstItem = new ItemBasic("first_item").setCreativeTab(CreativeTabs.MATERIALS).setMaxStackSize(32);
 	}
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
