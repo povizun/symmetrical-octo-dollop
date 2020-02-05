@@ -7,13 +7,13 @@
   "key": {
     "A": [
       {
-        "item": "stm:first_item",
+        "item": "plm:first_item",
         "data": 0
       }
     ]
   },
   "result": {
-    "item": "stm:first_block",
+    "item": "plm:first_block",
     "data": 0
   }
 }

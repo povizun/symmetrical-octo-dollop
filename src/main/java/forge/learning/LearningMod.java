@@ -1,5 +1,6 @@
 package forge.learning;
 
+import forge.learning.gen.OreGen;
 import forge.learning.init.ModBlocks;
 import forge.learning.init.ModItems;
 import forge.learning.init.ModRecipes;
@@ -9,6 +10,7 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid=Reference.MODID, name=Reference.MODNAME, version=Reference.VERSION, acceptedMinecraftVersions=Reference.ACCEPTED_MINECRAFT_VERSIONS)
 public class LearningMod {
@@ -24,6 +26,7 @@ public class LearningMod {
 	public void init(FMLInitializationEvent event) {
 		System.out.println(Reference.MODID + ":init");
 		ModRecipes.init();
+		GameRegistry.registerWorldGenerator(new OreGen(), 0);
 	}
 	
 	@EventHandler

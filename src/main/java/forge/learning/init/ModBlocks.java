@@ -18,7 +18,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid=Reference.MODID)
 public class ModBlocks {
 	static Block firstBlock;
-	static Block firstOre;
+	public static Block firstOre;
 
 	public static void init() {
 		firstBlock = new BlockBasic("first_block", Material.ROCK).setCreativeTab(CreativeTabs.BUILDING_BLOCKS).setHardness(1.5f).setLightLevel(1.0f);
