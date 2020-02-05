@@ -21,9 +21,9 @@ public class ModBlocks {
 	public static Block firstOre;
 
 	public static void init() {
-		firstBlock = new BlockBasic("first_block", Material.ROCK).setCreativeTab(CreativeTabs.BUILDING_BLOCKS).setHardness(1.5f).setLightLevel(1.0f);
+		firstBlock = new BlockBasic("first_block", Material.ROCK).setCreativeTab(ModItems.tabLearningMod).setHardness(1.5f).setLightLevel(1.0f);
 		firstBlock.setHarvestLevel("pickaxe", 2);
-		firstOre = new BlockOre("first_ore", Material.ROCK, ModItems.firstDust).setCreativeTab(CreativeTabs.BUILDING_BLOCKS).setHardness(1.3f).setLightLevel(0.2f);
+		firstOre = new BlockOre("first_ore", Material.ROCK, ModItems.firstDust).setCreativeTab(ModItems.tabLearningMod).setHardness(1.3f).setLightLevel(0.2f);
 		firstOre.setHarvestLevel("pickaxe", 2);
 	}
 
