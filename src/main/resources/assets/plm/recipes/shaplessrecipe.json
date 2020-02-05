@@ -1,0 +1,17 @@
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+	  "item": "minecraft:flint",
+	  "data": 0
+	},
+	{
+	  "item": "plm:first_item",
+	  "data": 0
+	}
+  ],
+  "result": {
+    "item": "plm:first_dust",
+    "data": 0
+  }
+}

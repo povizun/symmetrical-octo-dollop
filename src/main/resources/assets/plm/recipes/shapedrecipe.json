@@ -1,0 +1,19 @@
+{ 
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"  ],
+  "key": {
+    "A": [
+      {
+        "item": "stm:first_item",
+        "data": 0
+      }
+    ]
+  },
+  "result": {
+    "item": "stm:first_block",
+    "data": 0
+  }
+}

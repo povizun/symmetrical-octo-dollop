@@ -13,8 +13,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid=Reference.MODID)
 public class ModItems {
-	static Item firstItem;
-	static Item firstDust;
+	public static Item firstItem;
+	public static Item firstDust;
 	public static void init() {
 		firstItem = new ItemBasic("first_item").setCreativeTab(CreativeTabs.MATERIALS);
 		firstDust = new ItemBasic("first_dust").setCreativeTab(CreativeTabs.MATERIALS);

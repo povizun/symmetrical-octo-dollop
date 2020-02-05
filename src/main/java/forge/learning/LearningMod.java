@@ -2,6 +2,7 @@ package forge.learning;
 
 import forge.learning.init.ModBlocks;
 import forge.learning.init.ModItems;
+import forge.learning.init.ModRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -22,6 +23,7 @@ public class LearningMod {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		System.out.println(Reference.MODID + ":init");
+		ModRecipes.init();
 	}
 	
 	@EventHandler
